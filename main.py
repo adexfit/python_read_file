@@ -14,7 +14,8 @@ def read_file_content(filename):
     my_array = []
     
     for x in c.split():
-            my_array.append(x)
+        my_array.append(x)
+        my_file.close()
     return my_array
 
 
@@ -32,6 +33,7 @@ def count_words():
     mydict = {dic_key[i]: dic_value[i] for i in range(len(dic_key))}
  
     return mydict
+
 
     
 #    return {"as": 10, "would": 20}
